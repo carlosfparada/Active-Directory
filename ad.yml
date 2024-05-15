@@ -16,7 +16,7 @@
 
     - name: Ensure user bob is present with address information
       microsoft.ad.user:
-        domain_server: 6y2twd.onmicrosoft.com
+        domain_server: ldaps://6y2twd.onmicrosoft.com:636
         domain_username: cparada@6y2twd.onmicrosoft.com
         domain_password: "{{ password }}"
         identity: bob
