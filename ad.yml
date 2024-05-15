@@ -1,5 +1,6 @@
 ---
 
+# https://thecloudmarathoner.com/index.php/2021/10/28/how-to-create-a-free-azure-active-directory-developer-tenant-%F0%9F%A4%94/
 - name: Get dynamic RHEL nodes and assign them to groups
   hosts: localhost
   connection: local
