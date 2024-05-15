@@ -1,3 +1,4 @@
+---
 plugin: microsoft.ad.ldap
 tls_mode: ldaps
 attributes:
