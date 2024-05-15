@@ -5,16 +5,20 @@
   hosts: localhost
   connection: local
   gather_facts: no
+  vars_files: vault.yml
   tasks:
 
-    - name: Get the SID for all user accounts as a LDAP filter
-      microsoft.ad.object_info:
-        ldap_filter: (&(objectClass=user)(objectCategory=Person))
-        properties:
-        - objectSid
+    # - name: Get the SID for all user accounts as a LDAP filter
+    #   microsoft.ad.object_info:
+    #     ldap_filter: (&(objectClass=user)(objectCategory=Person))
+    #     properties:
+    #     - objectSid
 
     - name: Ensure user bob is present with address information
       microsoft.ad.user:
+        domain_server: 6y2twd.onmicrosoft.com
+        domain_username: cparada@6y2twd.onmicrosoft.com
+        domain_password: "{{ password }}"
         identity: bob
         firstname: Bob
         surname: Smith
