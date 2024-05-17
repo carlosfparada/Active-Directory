@@ -1,7 +1,7 @@
 ---
 plugin: microsoft.ad.ldap
 # server: 20.234.51.182
-# username: cparada
+# username: user
 # password: 'pass'
 
 # attributes:
