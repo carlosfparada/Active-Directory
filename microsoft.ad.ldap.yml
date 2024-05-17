@@ -1,8 +1,5 @@
 ---
 plugin: microsoft.ad.ldap
-server: "{{ MICROSOFT_AD_LDAP_SERVER }}"
-username: "{{ MICROSOFT_AD_LDAP_USERNAME }}"
-password: "{{ MICROSOFT_AD_LDAP_PASSWORD }}"
 # server: 20.234.51.182
 # username: user
 # password: 'pass'
