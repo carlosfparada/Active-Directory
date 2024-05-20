@@ -4,8 +4,8 @@ use_extra_vars: true
 # tls_mode: start_tls
 # server: "{{ server }}"
 # username: "{{ username }}"
-# # server: 20.234.51.182
-# # username: cparada
+server: 20.234.51.182
+username: cparada
 # password: "{{ password }}"
 attributes:
   OperatingSystem:
