@@ -1,6 +1,6 @@
 ---
 plugin: microsoft.ad.ldap
-server: "{{ server }}"
+server: 20.234.51.182
 username: "{{ username }}"
 password: "{{ password }}"
 attributes:
