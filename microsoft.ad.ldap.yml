@@ -5,9 +5,9 @@ use_extra_vars: true
 # username: cparada
 # password: "{{ password }}"
 
-server: "{{ MICROSOFT_AD_LDAP_SERVER }}"
-username: "{{ MICROSOFT_AD_LDAP_USERNAME }}"
-password: "{{ MICROSOFT_AD_LDAP_PASSWORD }}"
+# server: "{{ MICROSOFT_AD_LDAP_SERVER }}"
+# username: "{{ MICROSOFT_AD_LDAP_USERNAME }}"
+# password: "{{ MICROSOFT_AD_LDAP_PASSWORD }}"
 
 # attributes:
 #   OperatingSystem:
