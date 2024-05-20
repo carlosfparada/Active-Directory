@@ -1,8 +1,8 @@
 ---
 plugin: microsoft.ad.ldap
-server: "{{ SERVER }}"
-username: "{{ USERNAME }}"
-password: "{{ PASSWORD }}"
+server: "{{ server }}"
+username: "{{ username }}"
+password: "{{ password }}"
 attributes:
   OperatingSystem:
     operating_system:
