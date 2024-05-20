@@ -1,5 +1,6 @@
 ---
 plugin: microsoft.ad.ldap
+tls_mode: start_tls
 attributes:
   OperatingSystem:
     operating_system:
