@@ -4,9 +4,10 @@ use_extra_vars: true
 # tls_mode: start_tls
 # server: "{{ server }}"
 # username: "{{ username }}"
+# password: "{{ password }}"
 server: 20.234.51.182
 username: cparada
-password: "{{ password }}"
+password: '{{ lookup("ansible.builtin.env", "MICROSOFT_AD_LDAP_PASSWORD") }}'
 attributes:
   OperatingSystem:
     operating_system:
