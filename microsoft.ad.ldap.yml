@@ -5,6 +5,10 @@ plugin: microsoft.ad.ldap
 # username: cparada
 # password: "{{ password }}"
 
+server: "{{ MICROSOFT_AD_LDAP_SERVER }}"
+username: "{{ MICROSOFT_AD_LDAP_USERNAME }}"
+password: "{{ MICROSOFT_AD_LDAP_PASSWORD }}"
+
 # attributes:
 #   OperatingSystem:
 #     operating_system:
