@@ -1,6 +1,5 @@
 ---
 plugin: ldap_inventory
-domain: 'ldaps://adserver.domain.local:636'
-username: user@domain.local
+server: adserver.domain.local
+username: user
 password: "password"
-search_ou: "OU=Servers,OU=Windows,DC=domain,DC=local"
