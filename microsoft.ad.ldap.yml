@@ -2,7 +2,7 @@
 plugin: microsoft.ad.ldap
 use_extra_vars: true
 encrypt: false
-#tls_mode: start_tls
+# tls_mode: start_tls
 # server: "{{ server }}"
 # username: "{{ username }}"
 server: 20.234.51.182
