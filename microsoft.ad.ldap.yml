@@ -1,5 +1,8 @@
 ---
 plugin: microsoft.ad.ldap
+server: "{{ server }}"
+username: "{{ username }}"
+password: "{{ password }}"
 tls_mode: start_tls
 attributes:
   OperatingSystem:
