@@ -1,13 +1,12 @@
 ---
 plugin: microsoft.ad.ldap
-# server: "{{ server }}"
-# username: "{{ username }}"
-# password: "{{ password }}"
-server: 20.234.51.182
-username: cparada
-password: "{{ password }}"
 use_extra_vars: true
 tls_mode: start_tls
+server: "{{ server }}"
+username: "{{ username }}"
+password: "{{ password }}"
+# server: 20.234.51.182
+# username: cparada
 attributes:
   OperatingSystem:
     operating_system:
