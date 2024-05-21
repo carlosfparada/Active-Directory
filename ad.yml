@@ -1,8 +1,8 @@
 ---
 
 # https://www.redhat.com/en/blog/introducing-microsoft-active-directory-inventory-plug-ansible
-# https://thecloudmarathoner.com/index.php/2021/10/28/how-to-create-a-free-azure-active-directory-developer-tenant-%F0%9F%A4%94/
 # https://github.com/joshinryz/ansible_ldap_inventory/tree/master
+# https://docs.ansible.com/ansible/latest/os_guide/windows_winrm.html#winrm-authentication-options 
 - name: Active Directory
   hosts: ad
   connection: winrm
