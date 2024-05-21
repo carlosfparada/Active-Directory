@@ -9,9 +9,9 @@
   gather_facts: no
   tasks:
 
-  - name: debug
-    debug:
-      msg: "{{ lookup('env','MICROSOFT_AD_LDAP_SERVER') }}"
+    - name: debug
+      debug:
+        msg: "{{ lookup('env','MICROSOFT_AD_LDAP_SERVER') }}"
 
     # - name: Get the SID for all user accounts as a LDAP filter
     #   microsoft.ad.object_info:
