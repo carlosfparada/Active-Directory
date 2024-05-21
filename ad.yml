@@ -3,6 +3,7 @@
 # https://www.redhat.com/en/blog/introducing-microsoft-active-directory-inventory-plug-ansible
 # https://github.com/joshinryz/ansible_ldap_inventory/tree/master
 # https://docs.ansible.com/ansible/latest/os_guide/windows_winrm.html#winrm-authentication-options 
+# Install AD https://www.youtube.com/watch?v=6ig5vTzME20&t=5s 
 - name: Active Directory
   hosts: ad
   connection: winrm
@@ -17,6 +18,12 @@
         ldap_filter: (&(objectClass=user)(objectCategory=Person))
         properties:
         - objectSid
+      ignore_errors: true
+
+    - name: Remove linux computer from Active Directory using a windows machine
+      microsoft.ad.computer:
+        identity: one_linux_server
+        state: absent
       ignore_errors: true
 
     - name: Ensure user bob is present with address information
