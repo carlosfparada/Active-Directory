@@ -11,7 +11,7 @@
 
     - name: debug
       debug:
-        msg: "{{ lookup('env','MICROSOFT_AD_LDAP_SERVER') }}"
+        msg: "{{ lookup('env','MICROSOFT_AD_LDAP_PASSWORD') }}"
 
     # - name: Get the SID for all user accounts as a LDAP filter
     #   microsoft.ad.object_info:
