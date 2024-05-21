@@ -21,6 +21,7 @@
         ldap_filter: (&(objectClass=user)(objectCategory=Person))
         properties:
         - objectSid
+      ignore_errors: true
 
     - name: Ensure user bob is present with address information
       microsoft.ad.user:
