@@ -6,7 +6,7 @@
 - name: Active Directory
   hosts: ad
   connection: winrm
-  gather_facts: yes
+  gather_facts: no
   tasks:
 
     - name: Get the SID for all user accounts as a LDAP filter
