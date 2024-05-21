@@ -24,7 +24,6 @@
         # domain_server: "{{ lookup('env','MICROSOFT_AD_LDAP_SERVER') }}"
         # domain_username: "{{ lookup('env','MICROSOFT_AD_LDAP_USERNAME') }}"
         # domain_password: "{{ lookup('env','MICROSOFT_AD_LDAP_PASSWORD') }}"
-        auth_protocol: kerberos
         identity: bob
         firstname: Bob
         surname: Smith
