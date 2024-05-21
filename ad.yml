@@ -6,12 +6,8 @@
 - name: Active Directory
   hosts: ad
   connection: winrm
-  gather_facts: no
+  gather_facts: yes
   tasks:
-
-    - name: debug
-      debug:
-        msg: "{{ lookup('env','MICROSOFT_AD_LDAP_PASSWORD') }}"
 
     - name: Get the SID for all user accounts as a LDAP filter
       microsoft.ad.object_info:
