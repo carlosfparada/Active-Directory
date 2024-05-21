@@ -9,15 +9,15 @@
   gather_facts: no
   tasks:
 
-    # - name: Get the SID for all user accounts as a LDAP filter
-    #   microsoft.ad.object_info:
-    #     # domain_server: "{{ lookup('env','MICROSOFT_AD_LDAP_SERVER') }}"
-    #     # domain_username: "{{ lookup('env','MICROSOFT_AD_LDAP_USERNAME') }}"
-    #     # domain_password: "{{ lookup('env','MICROSOFT_AD_LDAP_PASSWORD') }}"
-    #     ldap_filter: (&(objectClass=user)(objectCategory=Person))
-    #     properties:
-    #     - objectSid
-    #   ignore_errors: true
+    - name: Get the SID for all user accounts as a LDAP filter
+      microsoft.ad.object_info:
+        # domain_server: "{{ lookup('env','MICROSOFT_AD_LDAP_SERVER') }}"
+        # domain_username: "{{ lookup('env','MICROSOFT_AD_LDAP_USERNAME') }}"
+        # domain_password: "{{ lookup('env','MICROSOFT_AD_LDAP_PASSWORD') }}"
+        ldap_filter: (&(objectClass=user)(objectCategory=Person))
+        properties:
+        - objectSid
+      ignore_errors: true
 
     - name: Ensure user bob is present with address information
       microsoft.ad.user:
